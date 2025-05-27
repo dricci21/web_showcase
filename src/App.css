@@ -1,62 +1,55 @@
-/* App.css */
-
 .navbar {
-  overflow: hidden;
   background-color: #05afbb;
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 1000;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   box-sizing: border-box;
+  align-items: center;
+  /* No position fixed or top */
 }
 
 .nav-link {
-  display: block;
   color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
-  flex: 1;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
 }
 
 /* Hover effect */
-.navbar a:hover {
+.nav-link:hover {
   background: #ddd;
   color: black;
+  border-radius: 4px;
 }
 
-/* Page content below navbar */
 .page-content {
-  margin-top: 60px; /* Push content below navbar */
   text-align: center;
   display: flex;
   justify-content: center;   
   align-items: center;
   width: 100vw;
-  min-height: calc(100vh - 60px); /* Adjust for navbar height */
+  min-height: 100vh; /* Full viewport height */
   background-color: rgb(48, 47, 47);
   box-sizing: border-box;
+  padding: 1rem; /* Add some padding */
+  margin: 0; /* No margin */
+  flex-direction: column; /* if your content stacks vertically */
 }
 
 /* Mobile responsiveness */
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-start;
   }
 
   .nav-link {
-    padding: 12px;
-    text-align: left;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 0;
   }
 
   .page-content {
-    flex-direction: column;
     padding: 1rem;
     height: auto;
   }
