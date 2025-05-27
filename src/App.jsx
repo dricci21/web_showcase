@@ -17,7 +17,7 @@ function App() {
 
       <div className="page-content">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/web_showcase" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/qrcode" element={<QRCode />} />
         </Routes>
