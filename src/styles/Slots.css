@@ -1,0 +1,123 @@
+/* src/styles/Slots.css */
+
+.slot-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.coins {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.slots {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.slot {
+  font-size: 3rem;
+  padding: 1rem;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #fffbe6;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  min-width: 60px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #0077cc;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #05afbb;
+}
+
+.warning {
+  color: #cc0000;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.payout-table {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.payout-table h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.payout-table ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.payout-table li {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+  padding: 0.25rem;
+  background-color: black;
+  border-radius: 6px;
+}
+
+
+.win-message {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #28a745;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+/* Mobile Support */
+@media (max-width: 600px) {
+  .slots {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  button {
+    width: 80%;
+  }
+}
