@@ -4,6 +4,7 @@ import About from './pages/About';
 import QRCode from './pages/QRCode';
 import Slots from './pages/Slots';
 import Tictactoe from './pages/Tictactoe';
+import Snake from './pages/Snake';
 import './App.css';
 
 function App() {
@@ -15,7 +16,9 @@ function App() {
           <Link to="/qrcode" className="nav-link">QR Code</Link>
           <Link to="/slots" className="nav-link">Slots</Link>
           <Link to="/Tictactoe" className="nav-link">TicTacToe</Link>
+          <Link to="/snake" className="nav-link">Snake</Link>
           <Link to="/about" className="nav-link">About Us</Link>
+          
         </nav>
 
         <div className="page-content">
@@ -24,7 +27,9 @@ function App() {
             <Route path="/qrcode" element={<QRCode />} />
             <Route path="/slots" element={<Slots />} />
             <Route path="/Tictactoe" element={<Tictactoe />} />
+            <Route path="/snake" element={<Snake />} />
             <Route path="/about" element={<About />} />
+            
             
           </Routes>
         </div>
